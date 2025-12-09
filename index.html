@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Linked Image</title>
+    <style>
+        /* CSS to center the content and set the background */
+        body {
+            background-color: #000000; 
+            margin: 0; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; 
+        }
+        
+        /* Minimal styling for the image */
+        img {
+            /* 50% smaller than 40% is 20% viewport width */
+            width: 20vw; 
+            max-width: 150px; /* Hard limit for small size */
+            height: auto;
+            display: block;
+            
+            /* REMOVED CORNERS/HIGHLIGHT/HOVER/BORDER */
+            border: none;
+            transition: none;
+            cursor: pointer;
+        }
+
+        /* Ensure no border appears on the link itself */
+        a {
+            text-decoration: none;
+            line-height: 0; /* Prevents tiny gap below the image */
+        }
+    </style>
+</head>
+<body>
+
+    <a href="https://freeimage.host/" target="_blank">
+        <img 
+            src="https://iili.io/fRukI0x.png" 
+            alt="fRukI0x.png"
+        >
+    </a>
+
+</body>
+</html>
